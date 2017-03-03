@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Twitter Sentiment Visualizer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="controllers/controllers.js"></script>
 </head>
-<body>
-<h1>Hello World</h1>
+<body ng-controller="main-ctrl">
+<h1>{{title}}</h1>
 </body>
 </html>
