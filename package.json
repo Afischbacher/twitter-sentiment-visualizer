@@ -1,0 +1,22 @@
+{
+  "name": "twitter-sentiment-visualizer",
+  "version": "1.0.0",
+  "description": "An AngularJS and node.js twitter sentiment analysis visualizer web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afischbacher/twitter-sentiment-visualizer.git"
+  },
+  "author": "Andre Fischbacher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Afischbacher/twitter-sentiment-visualizer/issues"
+  },
+  "homepage": "https://github.com/Afischbacher/twitter-sentiment-visualizer#readme",
+  "dependencies": {
+    "express": "^4.15.0"
+  }
+}
