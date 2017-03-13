@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Twitter Sentiment Visualizer</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-<script src="app.js"></script>
-<script src="controllers/controllers.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/controllers.js"></script>
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 </head>
-<body ng-controller="main-ctrl">
-<h1>{{title}}</h1>
+
+<body class="center-align" ng-controller="main-ctrl">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="s12 m12 l12">
+                <form ng-submit="getResponse()">
+                <h1>{{title}}</h1>
+                <input type="text" ng-model="searchInput" placeholder="Enter in a hashtag... (Like #node.js)"/>
+                <input class="waves-effect waves-light btn" type="submit" ng-model="dataInput">
+                <p>{{results}}</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
