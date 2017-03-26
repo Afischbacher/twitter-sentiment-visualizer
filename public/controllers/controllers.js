@@ -26,7 +26,6 @@ app.controller("main-ctrl", ["$scope", "$http", function ($scope, $http) {
 
             var tweetChart = new Chart(ctx).Line(startingData, {animationSteps: 50});
 
-
         });
     };
 }]);
