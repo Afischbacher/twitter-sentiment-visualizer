@@ -11,5 +11,8 @@
     <orderEntry type="library" name="angular" level="application" />
     <orderEntry type="library" name="d3" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="d3.v4" level="application" />
+    <orderEntry type="library" name="d3.v3" level="application" />
+    <orderEntry type="library" name="Chart" level="application" />
   </component>
 </module>

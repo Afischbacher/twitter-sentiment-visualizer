@@ -2,6 +2,7 @@
 <html ng-app="app" lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Twitter Sentiment Visualizer</title>
     <script
             src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -13,22 +14,57 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="//www.chartjs.org/assets/Chart.min.js"></script>
 </head>
 
-<body class="center-align" ng-controller="main-ctrl">
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="s12 m12 l12">
-                <form ng-submit="getResponse()">
-                <h1>{{title}}</h1>
-                <input type="text" ng-model="searchInput" placeholder="Enter in a hashtag... (Like #node.js)"/>
-                <input class="waves-effect waves-light btn" type="submit" ng-model="dataInput">
-                <p>{{results}}</p>
-                </form>
+<body ng-controller="main-ctrl">
+<header></header>
+<main>
+    <div class="container center-align valign">
+        <div class="valign center">
+            <div class="col s12 m12 l12">
+                <div class="input-field">
+                    <form ng-submit="getResponse()">
+                        <h1 >{{title}}</h1>
+                        <p class="flow-text center">Type in any hashtag and press enter.</p>
+                        <i class="material-icons prefix">#</i>
+                        <input type="text" id="tag-input" placeholder="Enter in a hashtag" ng-model="searchInput"/>
+                    </form>
+                    <canvas id="tweet-chart"></canvas>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</main>
+<footer class="page-footer blue-grey darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="white-text center">
+                    <p>
+                        By:
+                        <a target="_blank" href="http://andrefischbacher.com">Andre Fischbacher</a>
+                    </p>
+                    <p>Developed with modernized JavaScript and CSS frameworks, all with attention to detail and
+                        precision</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="center col s12 m12 l12">
+            <a href="http://angularjs.org"><img class="margin-sm-right"
+                                                src="images/AngularJS-Shield-large-282x300.png" alt="angularjs"
+                                                height="32"/></a>
+            <a href="http://materializecss.com">
+                <img src="images/apple-touch-icon-152x152.png" alt="materialize" height="32" class="margin-sm-right"/>
+            </a>
+            <a href="https://nodejs.org/en/"><img class="margin-sm-right" src="images/node.js.png" height="32"
+                                                  alt="node.js"/></a>
+            <a href="http://lesscss.org/"><img class="margin-sm-right" src="images/less-logo.png" height="32"
+                                               alt="less"/></a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
