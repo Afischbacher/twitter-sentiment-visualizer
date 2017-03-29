@@ -11,10 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/controllers.js"></script>
-    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="js/charts.min.js"></script>
+    <script src="js/chardin.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <link rel="stylesheet" href="css/chardin.min.css"/>
 </head>
 
 <body ng-controller="main-ctrl">
@@ -25,12 +28,13 @@
             <div class="col s12 m12 l12">
                 <div class="input-field">
                     <form ng-submit="getResponse()">
-                        <h1 >{{title}}</h1>
+                        <h1>{{title}}</h1>
                         <p class="flow-text center">Type in any hashtag and press enter.</p>
                         <i class="material-icons prefix">#</i>
-                        <input type="text" id="tag-input" placeholder="Enter in a hashtag" ng-model="searchInput"/>
+                        <input data-intro="Enter in the any twitter hashtag here" data-position="right" type="text"
+                               id="tag-input" placeholder="Enter in a hashtag here" ng-model="searchInput"/>
                     </form>
-                    <canvas id="tweet-chart"></canvas>
+                    <canvas data-intro="See the twitter data visualization here" data-position="left" id="tweet-chart"></canvas>
                 </div>
             </div>
         </div>
@@ -40,10 +44,10 @@
     <div class="container">
         <div class="row">
             <div class="container">
-                <div class="white-text center">
+                <div data-intro="The author" data-position="left" class="white-text center">
                     <p>
                         By:
-                        <a target="_blank" href="http://andrefischbacher.com">Andre Fischbacher</a>
+                        <a  target="_blank" href="http://andrefischbacher.com">Andre Fischbacher</a>
                     </p>
                     <p>Developed with modernized JavaScript and CSS frameworks, all with attention to detail and
                         precision</p>
@@ -65,6 +69,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>

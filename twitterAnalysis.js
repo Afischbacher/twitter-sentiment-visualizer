@@ -31,7 +31,6 @@ var twitterAnalysis = function () {
             async.each(tweets.statuses, function (item, callEach) {
 
                 twitterData.push(item.text);
-                console.log(twitterData);
                 var sentScore = sentiment(item.text, function (err, data) {
                     if(data.score < -4 ){
                         dataScore["Very Negative"] += 1;
@@ -54,7 +53,6 @@ var twitterAnalysis = function () {
 
             }, function () {
                 callback(null, dataScore, twitterData);
-                console.log(dataScore);
 
             });
 
