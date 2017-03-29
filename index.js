@@ -21,8 +21,8 @@ app.get('/results/:query', function (req, res) {
 
 });
 
-
-app.listen(process.env.PORT || 3000, function () {
-    console.log("Listening to the app on port" + process.env.PORT);
+var port = process.env.PORT || 3000;
+app.listen( port, function () {
+    console.log("Listening to the app on port" + port);
 });
 
