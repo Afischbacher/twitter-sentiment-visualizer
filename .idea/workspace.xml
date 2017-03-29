@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="349002b6-bb42-4619-8167-502b06b6640e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/controllers.js" afterPath="$PROJECT_DIR$/public/controllers/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitterAnalysis.js" afterPath="$PROJECT_DIR$/twitterAnalysis.js" />
     </list>
     <ignored path="twitter-sentiment-visualizer.iws" />
@@ -86,8 +83,8 @@
       <file leaf-file-name="twitterAnalysis.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitterAnalysis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+            <state relative-caret-position="455">
+              <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -120,7 +117,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="54">
-                <caret line="3" column="81" lean-forward="true" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+                <caret line="3" column="81" lean-forward="false" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -162,8 +159,8 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/public/controllers/controllers.js" />
-        <option value="$PROJECT_DIR$/twitterAnalysis.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/twitterAnalysis.js" />
       </list>
     </option>
   </component>
@@ -403,12 +400,12 @@
       <workItem from="1490491521646" duration="10990000" />
       <workItem from="1490741676695" duration="431000" />
       <workItem from="1490752195599" duration="1834000" />
-      <workItem from="1490793568626" duration="1695000" />
+      <workItem from="1490793568626" duration="2447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56269000" />
+    <option name="totallyTimeSpent" value="57021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -841,7 +838,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="54">
-            <caret line="3" column="81" lean-forward="true" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+            <caret line="3" column="81" lean-forward="false" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
             <folding />
           </first_editor>
           <second_editor />
@@ -850,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterAnalysis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+        <state relative-caret-position="455">
+          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -29,18 +29,20 @@ var twitterAnalysis = function () {
             if (error) callback(error);
 
             async.each(tweets.statuses, function (item, callEach) {
+
                 twitterData.push(item.text);
+                console.log(twitterData);
                 var sentScore = sentiment(item.text, function (err, data) {
-                    if(data.score < -6 ){
+                    if(data.score < -4 ){
                         dataScore["Very Negative"] += 1;
                     }
-                    else if(data.score >= -5 && data.score < 0){
+                    else if(data.score >= -3 && data.score < 0){
                         dataScore["Negative"] += 1;
                     }
                     else if (data.score == 0 ){
                         dataScore["Neutral"] += 1;
                     }
-                    else if (data.score > 0 && data.score <= 2){
+                    else if (data.score > 0 && data.score <= 3){
                         dataScore["Positive"] += 1;
                     }
                     else {
