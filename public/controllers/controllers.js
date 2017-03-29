@@ -1,6 +1,8 @@
-/**
- * Created by ital- on 2017-03-02.
+/*
+ By: Andre Fischbacher
+ Date: 2017-03-17
  */
+
 app.controller("main-ctrl", ["$scope", "$http", function ($scope, $http) {
     $scope.title = "Twitter Sentiment Visualizer";
 

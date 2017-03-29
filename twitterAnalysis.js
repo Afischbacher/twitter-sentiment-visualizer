@@ -52,7 +52,7 @@ var twitterAnalysis = function () {
 
             }, function () {
                 callback(null, dataScore, twitterData);
-
+                console.log(dataScore);
 
             });
 

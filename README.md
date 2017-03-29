@@ -1,5 +1,6 @@
 # twitter-sentiment-visualizer
 
-An AngularJS and node.js app that scrapes twitter data based on hashtags and visualizes it using charts.js
+An AngularJS and node.js app that scrapes twitter
+data based on hashtags and visualizes it using charts.js and deployed with Heroku
 
-https://twitter-sentiment-visualizer.herokuapp.com/
+Live Demo: https://twitter-sentiment-visualizer.herokuapp.com/
