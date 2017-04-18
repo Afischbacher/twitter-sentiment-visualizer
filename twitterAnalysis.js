@@ -8,6 +8,7 @@ var twitterAnalysis = function () {
     var twitter = require("twitter");
     var dotenv = require("dotenv");
     var sentiment = require("sentiment");
+    var typedcontract = require("typedcontract");
 
     dotenv.config();
 
@@ -23,7 +24,7 @@ var twitterAnalysis = function () {
         var dataScore = {"Very Negative": 0, "Negative": 0, "Neutral": 0, "Positive": 0, "Very Positive": 0};
         var sum = 0;
 
-        twitterApi.get("search/tweets", {q: query, lang: "en"}, function (error, tweets, response) {
+        twitterApi.get("search/tweets", {q: "#"+ query, lang: "en"}, function (error, tweets, response) {
             var twitterData = [];
 
             if (error) callback(error);
@@ -47,12 +48,11 @@ var twitterAnalysis = function () {
                     else {
                         dataScore["Very Positive"] += 1;
                     }
-
                     callEach(); // decrementing by 1 until the length of the array is completed for the tweets.statuses
                 });
 
             }, function () {
-                callback(null, dataScore, twitterData);
+                callback(null, dataScore);
 
             });
 

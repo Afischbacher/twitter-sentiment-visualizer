@@ -14,9 +14,8 @@ app.use(express.static('public'));
 
 app.get('/results/:query', function (req, res) {
 
-    twitter.getTwitterHashTagData(req.params.query, function (error, data) {
-        res.end(JSON.stringify(data));
-
+    twitter.getTwitterHashTagData(req.params.query, function (error, dataScores) {
+        res.end(JSON.stringify(dataScores));
     });
 
 });
