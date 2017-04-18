@@ -17,7 +17,7 @@ app.controller("main-ctrl", ["$scope", "$http", function ($scope, $http) {
                     labels: ["Very Negative", "Negative", "Neutral", "Positive", "Very Positive"],
                     datasets: [
                         {
-                            fillColor: "rgba(10,255,25,0.3)",
+                            fillColor: "rgba(29,161,242,0.5)",
                             strokeColor: "rgba(220,220,220,1)",
                             pointColor: "rgba(220,220,220,1)",
                             pointStrokeColor: "#fff",
