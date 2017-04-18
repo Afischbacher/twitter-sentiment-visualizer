@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{Chart, angular, d3, d3.v3, d3.v4, jquery}" />
+    <file url="PROJECT" libraries="{Chart, angular, angular-animate, d3, d3.v3, d3.v4, jquery}" />
   </component>
 </project>

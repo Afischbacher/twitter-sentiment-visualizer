@@ -14,5 +14,6 @@
     <orderEntry type="library" name="d3.v4" level="application" />
     <orderEntry type="library" name="d3.v3" level="application" />
     <orderEntry type="library" name="Chart" level="application" />
+    <orderEntry type="library" name="angular-animate" level="application" />
   </component>
 </module>

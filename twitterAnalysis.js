@@ -25,7 +25,7 @@ var twitterAnalysis = function () {
 
         twitterApi.get("search/tweets", {q: "#"+ query, lang: "en"}, function (error, tweets, response) {
             var twitterData = [];
-
+            var sortedTwitterData = [];
             if (error) callback(error);
 
             async.each(tweets.statuses, function (item, callEach) {
@@ -33,25 +33,31 @@ var twitterAnalysis = function () {
                 twitterData.push(item.text);
                 var sentScore = sentiment(item.text, function (err, data) {
                     if(data.score < -4 ){
+                        sortedTwitterData.unshift(item.text);
                         dataScore["Very Negative"] += 1;
                     }
                     else if(data.score >= -3 && data.score < 0){
+                        sortedTwitterData.splice(2,0, item.text);
                         dataScore["Negative"] += 1;
                     }
                     else if (data.score == 0 ){
+                        sortedTwitterData.splice(3,0, item.text);
                         dataScore["Neutral"] += 1;
                     }
                     else if (data.score > 0 && data.score <= 3){
+                        sortedTwitterData.splice(4,0, item.text);
                         dataScore["Positive"] += 1;
                     }
                     else {
+                        sortedTwitterData.push(item.text);
                         dataScore["Very Positive"] += 1;
                     }
                     callEach(); // decrementing by 1 until the length of the array is completed for the tweets.statuses
                 });
 
             }, function () {
-                callback(null, dataScore, twitterData);
+
+                callback(null, dataScore, sortedTwitterData);
 
             });
 

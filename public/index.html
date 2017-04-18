@@ -9,6 +9,7 @@
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/controllers.js"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
@@ -29,7 +30,7 @@
                 <div class="input-field">
                     <form ng-submit="getResponse()">
                         <h1>{{title}}</h1>
-                        <p class="flow-text center">Type in any hashtag and press enter.</p>
+                        <p class="flow-text center">Type in any hashtag or keyword and press enter to visualize <a target="_blank" href="http://www.twitter.com">Twitter</a> data.</p>
                         <i class="material-icons prefix">#</i>
                         <input data-intro="Enter in the any twitter hashtag here" data-position="right" type="text"
                                id="tag-input" placeholder="Enter in a hashtag here" ng-model="searchInput"/>
@@ -39,8 +40,8 @@
                 </div>
             </div>
         </div>
-        <h4 class="flow-text">Here Are Those Tweets...</h4>
-        <div ng-repeat="data in tweets track by $index" class="card card-shadow">
+        <h4 class="flow-text">Here Are Those Tweets... (Sorted from Not So Nice to Really Nice)</h4>
+        <div ng-repeat="data in tweets track by $index" class="card card-shadow" >
             <div class="card-content black-text">
                 <p >{{data}}</p>
             </div>

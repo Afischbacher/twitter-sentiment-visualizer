@@ -36,5 +36,5 @@ main {
   transition: 0.6s ease;
 }
 .card-shadow:hover {
-  box-shadow: black 1px 1px 50px;
+  box-shadow: black 1px 1px 10px;
 }
