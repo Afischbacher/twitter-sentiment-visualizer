@@ -17,8 +17,8 @@ app.get('/results/:query', function (req, res) {
     twitter.getTwitterHashTagData(req.params.query, function (error, dataScores, twitterData) {
         if (error) console.log(error);
 
-        res.write(JSON.stringify(twitterData));
-        res.end(JSON.stringify(dataScores));
+        res.write(JSON.stringify(twitterData).toString());
+        res.end(JSON.stringify(dataScores).toString());
     });
 
 });
