@@ -8,7 +8,6 @@ var twitterAnalysis = function () {
     var twitter = require("twitter");
     var dotenv = require("dotenv");
     var sentiment = require("sentiment");
-    var typedcontract = require("typedcontract");
 
     dotenv.config();
 
