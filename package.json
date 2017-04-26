@@ -1,7 +1,7 @@
 {
   "name": "twitter-sentiment-visualizer",
   "version": "1.0.0",
-  "description": "An AngularJS and node.js twitter sentiment analysis visualizer web app",
+  "description": "An AngularJS 1.6 and node.js twitter sentiment analysis visualizer web application, to visualize and analyze active twitter data  ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
