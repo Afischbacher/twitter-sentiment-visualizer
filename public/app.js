@@ -1,4 +1,8 @@
 /**
- * Created by ital- on 2017-03-02.
+ * Created by Andre Fischbacher
  */
-var app = angular.module("app",['ngAnimate']);
+var app = angular.module("app",[]);
+
+app.config(['$qProvider', function ($qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
+}]);
