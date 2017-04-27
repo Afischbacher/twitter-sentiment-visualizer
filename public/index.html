@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/controllers.js"></script>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="js/charts.min.js"></script>
@@ -22,28 +22,35 @@
 </head>
 
 <body ng-controller="main-ctrl">
-<header></header>
+<a target="_blank" href="https://github.com/Afischbacher/twitter-sentiment-visualizer#twitter-sentiment-visualizer"><img
+        style="position: absolute; top: 0; right: 0; border: 0;"
+        src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+        alt="Fork me on GitHub"
+        data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 <main>
+    <div class="twitter-bird twitter-flying"></div>
     <div class="container center-align valign">
         <div class="valign center">
             <div class="col s12 m12 l12">
                 <div class="input-field">
                     <form ng-submit="getResponse()">
                         <h1>{{title}}</h1>
-                        <p class="flow-text center">Type in any hashtag or keyword and press enter to visualize <a target="_blank" href="http://www.twitter.com">Twitter</a> data.</p>
+                        <p class="flow-text center">Type in any hashtag or keyword and press enter to visualize <a
+                                target="_blank" href="http://www.twitter.com">Twitter</a> data.</p>
                         <i class="material-icons prefix">#</i>
                         <input data-intro="Enter in the any twitter hashtag here" data-position="right" type="text"
                                id="tag-input" placeholder="Enter in a hashtag here" ng-model="searchInput"/>
                     </form>
 
-                    <canvas data-intro="See the twitter data visualization here" data-position="left" id="tweet-chart"></canvas>
+                    <canvas data-intro="See the twitter data visualization here" data-position="left"
+                            id="tweet-chart"></canvas>
                 </div>
             </div>
         </div>
         <h4 class="flow-text">Here Are Those Tweets... (Sorted from Not So Nice to Really Nice)</h4>
-        <div ng-repeat="data in tweets track by $index" class="card card-shadow" >
+        <div ng-repeat="data in tweets track by $index" class="card card-shadow">
             <div class="card-content black-text">
-                <p >{{data}}</p>
+                <p>{{data}}</p>
             </div>
         </div>
 
@@ -56,7 +63,7 @@
                 <div data-intro="The author" data-position="left" class="white-text center">
                     <p>
                         By:
-                        <a  target="_blank" href="http://andrefischbacher.com">Andre Fischbacher</a>
+                        <a target="_blank" href="http://andrefischbacher.com">Andre Fischbacher</a>
                     </p>
                     <p>Developed with modernized JavaScript and CSS frameworks, all with attention to detail and
                         precision</p>
