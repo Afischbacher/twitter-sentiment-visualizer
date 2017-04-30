@@ -1,3 +1,4 @@
+
 app.controller("main-ctrl", ["$scope", "$http", function ($scope, $http) {
     $scope.title = "Twitter Sentiment Visualizer";
 
