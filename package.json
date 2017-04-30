@@ -4,7 +4,7 @@
   "description": "An AngularJS 1.6 and node.js twitter sentiment analysis visualizer web application, to visualize and analyze active twitter data  ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "start": "node index.js"
   },
   "repository": {
@@ -23,5 +23,11 @@
     "express": "^4.15.0",
     "sentiment": "^3.0.1",
     "twitter": "^1.7.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.5"
   }
 }
